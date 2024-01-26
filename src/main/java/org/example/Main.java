@@ -15,7 +15,7 @@ public class Main {
         student.setAddress("matugama");
 
         Session session = FactoryConfiguration.getInstance().getSession();
-        Transaction transaction =  session.beginTransaction(); // hibernate waladi hama sql ekakma run krnne traceaction ekak athule natnm query eka inset wnne na
+        Transaction transaction =  session.beginTransaction(); // hibernate waladi hama sql ekakma run krnne traceaction ekak athule natnm query eka insert wnne na
         //session.save,persist(student);
          //session.delete(student);
 //       session.update(student);
@@ -25,6 +25,6 @@ public class Main {
 
         transaction.commit();
         session.close();
-        //hibernate wala delete query ekk run wnna kalin select query ekak ghnwa database eke thiynwda balanna
+        //hibernate wala delete query ekk run wnna kalin select query ekak ghnwa database eke id eka thiynwda balanna
     }
 }
